@@ -1,0 +1,19 @@
+LOCUS       cPCR_fwd          30 bp DNA     linear   UNA 17-APR-2025
+DEFINITION  natural linear DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      natural DNA sequence
+  ORGANISM  unspecified
+REFERENCE   1  (bases 1 to 30)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Apr 17, 2025 from SnapGene Viewer 7.2.0
+            https://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..30
+                     /mol_type="genomic DNA"
+                     /organism="unspecified"
+ORIGIN
+        1 ggggttcgat aatcaaactt gccttgaagg
+//

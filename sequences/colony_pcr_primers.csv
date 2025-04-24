@@ -1,0 +1,3 @@
+id,name,sequence,length,melting_temperature,gc_content,homodimer_melting_temperature,homodimer_deltaG,hairpin_melting_temperature,hairpin_deltaG,pcr_source_id,binding_length,binding_melting_temperature,binding_gc_content,heterodimer_melting_temperature,heterodimer_deltaG
+1,primer_for_colony_PCR_for_sequencing_rvs,caccgatacccagaccgtatcaaccac,27,64.5,56,8.3,-2462,41.4,-497,,,,,,
+2,primer_for_colony_PCR_for_sequencing_fwd,ggggttcgataatcaaacttgccttgaagg,30,64,47,6.9,-5395,36.4,50,,,,,,

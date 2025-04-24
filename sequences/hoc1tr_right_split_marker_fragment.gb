@@ -1,0 +1,122 @@
+LOCUS       hoc1tr_right_spl        1984 bp    DNA     linear   UNA 24-APR-2025
+DEFINITION  synthetic linear DNA.
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      synthetic DNA construct
+  ORGANISM  synthetic DNA construct
+REFERENCE   1  (bases 1 to 1984)
+  AUTHORS   Noah Sprent
+  TITLE     Direct Submission
+  JOURNAL   Exported Apr 24, 2025 from SnapGene 8.0.2
+            https://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..1984
+                     /mol_type="other DNA"
+                     /organism="PCR product"
+     source          981..1984
+                     /chromosome="3"
+                     /strain="CBS 7435"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:981350"
+                     /organism="Komagataella phaffii CBS 7435"
+     misc_feature    1..494
+                     /label=Overlap between fragments
+     promoter        1..104
+                     /label=ILV5 promoter (partial)
+     promoter        105..168
+                     /label=EM72 synthetic promoter
+     misc_feature    116..117
+                     /label=Difference from shuttle vector AC>TT
+     CDS             170..742
+                     /codon_start=1
+                     /label=NATr
+                     /translation="MGTTLDDTAYRYRTSVPGDAEAIEALDGSFTTDTVFRVTATGDGF
+                     TLREVPVDPPLTKVFPDDESDDESDDGEDGDPDSRTFVAYGDDGDLAGFVVVSYSGWNR
+                     RLTVEDIEVAPEHRGHGVGRALMGLATEFARERGAGHLWLEVTNVNAPAIHAYRRMGFT
+                     LCGLDTALYDGTASDGEQALYMSMPCP"
+     terminator      750..947
+                     /label=TEF terminator
+                     /note="Ashbya gossypii TEF terminator"
+     protein_bind    complement(948..981)
+                     /label=lox66
+                     /bound_moiety="Cre recombinase"
+                     /note="Right element (RE) mutant of loxP (Araki et al.,
+                     2010). Cre-mediated recombination occurs in the 8-bp core 
+                     sequence (ATGTATGC) (Shaw et al., 2021)."
+     CDS             981..1352
+                     /label=HOC1
+     mRNA            981
+                     /gene="HOC1"
+                     /locus_tag="PP7435_CHR3-0582"
+                     /product="Alpha-1,6-mannosyltransferase"
+                     /label=HOC1 mRNA
+     gene            981
+                     /gene="HOC1"
+                     /locus_tag="PP7435_CHR3-0582"
+                     /label=HOC1
+     CDS             complement(1349..1984)
+                     /codon_start=1
+                     /gene="VAC7"
+                     /locus_tag="PP7435_CHR3-0581"
+                     /product="Vacuolar inheritance and morphology protein"
+                     /label=VAC7
+                     /note="Integral vacuolar membrane protein involved in
+                     vacuole inheritance and morphology; activates Fab1p kinase 
+                     activity under basal conditions and also after hyperosmotic
+                     shock."
+                     /db_xref="EnsemblGenomes-Gn:PP7435_Chr3-0581"
+                     /db_xref="EnsemblGenomes-Tr:CCA39539"
+                     /db_xref="GOA:F2QVW1"
+                     /db_xref="InterPro:IPR024260"
+                     /db_xref="UniProtKB/TrEMBL:F2QVW1"
+                     /protein_id="CCA39539.1"
+                     /translation="GFNPGFVAIEIDDVLIDFFAKSSHLNDGNEDGTPFTFDESSLDTV
+                     LLGSINRLPVPLVFQGGFFSRNPDEDTTEIKILNPAQKPLPEPTDSTVTTTTTTTTNTP
+                     ASVTPTKSIITSIITDTQTVSTTNSSTIPRSLEDVTTISLLPIPELQRRSKSPSEDNNI
+                     WEIISKYPFELVVRGVLLYKLPFSPGYNSLSINKAIMIDPDNLNGSDP"
+     mRNA            complement(1349..1984)
+                     /gene="VAC7"
+                     /locus_tag="PP7435_CHR3-0581"
+                     /product="Vacuolar inheritance and morphology protein"
+                     /label=VAC7 mRNA
+     gene            complement(1349..1984)
+                     /gene="VAC7"
+                     /locus_tag="PP7435_CHR3-0581"
+                     /label=VAC7
+ORIGIN
+        1 ctcgaaaccg cgacttcaaa cgccaatatg atgtgcggca cacaataagc gttcatatcc
+       61 gctgggtgac tttctcgctt taaaaaatta tccgaaaaaa ttttctagag tgttgttact
+      121 ttatacttcc ggctcgtata atacgacaag gtgtaaggag gactaaacca tgggtactac
+      181 cttagatgat acagcctaca gatacagaac atcagtccct ggtgatgctg aagcaattga
+      241 ggctttagac ggttcattca ccaccgacac cgtctttaga gtaaccgcca ccggtgatgg
+      301 atttacctta agagaagtcc cagtcgaccc tccattaact aaagtctttc cagatgatga
+      361 atctgatgac gaaagcgacg acggagaaga tggtgaccca gattcaagaa ctttcgtagc
+      421 atacggtgat gacggtgatt tggctggttt tgtagtcgtt tcttattcag gttggaatag
+      481 aaggttgacc gttgaagata tagaagtcgc cccagagcat agaggtcatg gtgtaggaag
+      541 agctttgatg ggtttggcta cagaatttgc aagagagaga ggagccggtc atttatggtt
+      601 agaagttact aatgttaacg cccctgctat ccatgcttat agaagaatgg gtttcacatt
+      661 atgtggttta gatactgctt tatatgatgg aacagcatct gacggtgaac aggccttgta
+      721 tatgtctatg ccttgccctt aagccggtaa ctgacaataa aaagattctt gttttcaaga
+      781 acttgtcatt tgtatagttt ttttatattg tagttgttct attttaatca aatgttagcg
+      841 tgatttatat tttttttcgc ctcgacatca tctgcccaga tgcgaagtta agtgcgcaga
+      901 aagtaatatc atgcgtcaat cgtatgtgaa tgctggtcgc tatactgata acttcgtata
+      961 gcatacatta tacgaacggt agagaattaa tcgccaaaat cacagaggat acactgcaac
+     1021 gagccgagtc aaactcactg gaactagctg acattagcga agaaggcggc ctgtctgata
+     1081 agaatttgtc cattatgcaa tggacgggta ctggtatttt tacagatgcc atatttacct
+     1141 attttaatga ctacattcaa agtagtatct ataccaaagt tacttggaaa gaattctcca
+     1201 aattgagaaa gcccaagctt gtcagtgatg tattggtact gccgattatc agcttctcgg
+     1261 ccggtgcagg tagtggaaaa tcgactgaac tgaacgatcc cttagcattc gtacaacatt
+     1321 attttgaaag attacataac gacaaccact aagggtcaga accatttaga ttgtctggat
+     1381 ctatcattat ggccttgttt atagacaaag aattgtatcc tggactgaag ggaagtttat
+     1441 agagtaatac ccctctgaca accaactcga atgggtattt tgagataatt tcccatatat
+     1501 tattgtcttc actgggagac ttacttcttc tttgtagttc cggtatcggc agcaaactta
+     1561 tggtggtcac atcttccaaa cttctcggta tagtagaact atttgtggtt gatacggtct
+     1621 gggtatcggt gataatgctt gtaataatgg attttgtggg tgtaactgaa gctggtgtat
+     1681 tagtggtagt ggtagtggtg gttgttactg tgctatctgt aggttctggg agtggtttct
+     1741 gagccgggtt taaaattttg atctctgtgg tatcttcgtc tggatttcga ctaaaaaatc
+     1801 cgccttgaaa tacgagtgga acaggtaaac gattgatgga gcccagaagc actgtgtcca
+     1861 aggaagattc atcaaaagtg aaaggagtgc catcttcgtt tccatcgtta agatgagaac
+     1921 ttttggcaaa aaaatcaatc agaacgtcat ctatttctat ggcgacaaat ccgggattga
+     1981 atcc
+//

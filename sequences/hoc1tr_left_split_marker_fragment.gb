@@ -1,0 +1,125 @@
+LOCUS       hoc1tr_left_spli        1999 bp    DNA     linear   UNA 24-APR-2025
+DEFINITION  synthetic linear DNA.
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      synthetic DNA construct
+  ORGANISM  synthetic DNA construct
+REFERENCE   1  (bases 1 to 1999)
+  AUTHORS   Noah Sprent
+  TITLE     Direct Submission
+  JOURNAL   Exported Apr 24, 2025 from SnapGene 8.0.2
+            https://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..1999
+                     /mol_type="other DNA"
+                     /organism="PCR product"
+     source          1..1018
+                     /chromosome="3"
+                     /strain="CBS 7435"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:981350"
+                     /organism="Komagataella phaffii CBS 7435"
+     CDS             join(56..114,217..1018)
+                     /codon_start=1
+                     /gene="HOC1"
+                     /locus_tag="PP7435_CHR3-0582"
+                     /product="Alpha-1,6-mannosyltransferase"
+                     /label=HOC1 (Alternative start/splicing?)
+                     /label=HOC1
+                     /note="Alpha-1,6-mannosyltransferase involved in cell wall 
+                     mannan biosynthesis; subunit of a Golgi-localized complex 
+                     in S. cerevisiae that also contains Anp1p, Mnn9p, Mnn11p, 
+                     and Mnn10p; identified as a suppressor of a cell lysis 
+                     sensitive pkc1-371 allele"
+                     /db_xref="EnsemblGenomes-Gn:PP7435_Chr3-0582"
+                     /db_xref="EnsemblGenomes-Tr:CCA39540"
+                     /db_xref="GOA:F2QVW2"
+                     /db_xref="InterPro:IPR007577"
+                     /db_xref="InterPro:IPR029044"
+                     /db_xref="UniProtKB/TrEMBL:F2QVW2"
+                     /protein_id="CCA39540.1"
+                     /translation="MYERCEVSLLAIFLQRDRGRKVIWLTVGLITVILVIIKISSSKST
+                     ATDLQKVLKNANILPQDVINYNSRKVTDELASKLDEIQKKYLSKQDDRISKLEAERADL
+                     LEQVRFLRNPPAGSSLREKLAYLFPYNENGKFPAYIWQTWKYGLNDDRFGEKFKEGETQ
+                     WASKNPGFVHELFNDDTSGVFIHHLYINVPEVIKAYELLPNIILKMDFFRYLVLYAKGG
+                     VYADVDTMPLQPVPNWIPENVSPKSIGMIIGIQNDANNPDWKKITYIVYNFPIGVFKRS
+                     LVTQS"
+     mRNA            join(56..114,217..1018)
+                     /gene="HOC1"
+                     /locus_tag="PP7435_CHR3-0582"
+                     /product="Alpha-1,6-mannosyltransferase"
+                     /label=HOC1 mRNA
+     gene            56..1018
+                     /gene="HOC1"
+                     /locus_tag="PP7435_CHR3-0582"
+                     /label=HOC1
+     CDS             197..1018
+                     /codon_start=1
+                     /product="Alpha-1,6-mannosyltransferase"
+                     /label=HOC1
+                     /translation="MQQQLFRKVIWLTVGLITVILVIIKISSSKSTATDLQKVLKNANI
+                     LPQDVINYNSRKVTDELASKLDEIQKKYLSKQDDRISKLEAERADLLEQVRFLRNPPAG
+                     SSLREKLAYLFPYNENGKFPAYIWQTWKYGLNDDRFGEKFKEGETQWASKNPGFVHELF
+                     NDDTSGVFIHHLYINVPEVIKAYELLPNIILKMDFFRYLVLYAKGGVYADVDTMPLQPV
+                     PNWIPENVSPKSIGMIIGIQNDANNPDWKKITYIVYNFPIGVFKRSLVTQS"
+     misc_difference 949^950
+                     /label=Deletion of A compared to Type strain
+     protein_bind    complement(1019..1052)
+                     /label=lox71
+                     /bound_moiety="Cre recombinase"
+                     /note="Left element (LE) mutant of loxP (Araki et al.,
+                     2010). Cre-mediated recombination occurs in the 8-bp core 
+                     sequence (ATGTATGC) (Shaw et al., 2021)."
+     promoter        1053..1609
+                     /label=ILV5 promoter
+     misc_difference 1178..1179
+                     /label=Difference from ILV5 in shuttle vector AG>GA
+     misc_feature    1506..1999
+                     /label=Overlap between fragments
+     promoter        1610..1673
+                     /label=EM72 synthetic promoter
+     misc_feature    1621..1622
+                     /label=Difference from shuttle vector AC>TT
+     CDS             1675..1999
+                     /codon_start=1
+                     /label=NATr
+                     /translation="MGTTLDDTAYRYRTSVPGDAEAIEALDGSFTTDTVFRVTATGDGF
+                     TLREVPVDPPLTKVFPDDESDDESDDGEDGDPDSRTFVAYGDDGDLAGFVVVSYSGWNR
+                     RLTV"
+ORIGIN
+        1 gagtgtcgca cgtctcggta tttttttact tgtcgattct ctcttactgt ccaagatgta
+       61 cgaaagatgt gaagtttctt tgttggcgat tttcttgcag cgcgatcgcg gtcggtatga
+      121 tttcccttca gaccaaaaac agatatagat attcaattga aactcgccct tccaacaccc
+      181 tgaacaccac cccctaatgc aacaacagct gtttagaaaa gtaatttggc tcacggttgg
+      241 actcataacg gtgatattgg taataataaa gatttcatcc agcaagtcca ccgccacaga
+      301 ccttcagaaa gtattgaaga atgccaatat tttaccgcag gacgtgatca attacaatag
+      361 cagaaaagta acggatgaac tcgcttcaaa gctggacgag attcaaaaga agtatctctc
+      421 gaagcaagat gatagaatta gcaagctcga agctgaacgg gcagatctac tggaacaggt
+      481 tagatttcta aggaaccccc ctgcaggatc aagtttaaga gaaaaattgg cttatctgtt
+      541 tccttataat gaaaacggca aattccctgc ttatatatgg caaacatgga agtatggctt
+      601 gaatgacgat cggtttggag aaaagttcaa agaaggcgaa actcagtggg cttcgaagaa
+      661 tcctggtttc gttcatgagt tgtttaacga tgatacttcc ggtgtgttta ttcaccatct
+      721 gtatatcaat gttccagaag tgatcaaagc atacgagctg cttcccaaca taatcttgaa
+      781 aatggacttc ttcagatatt tggttttata cgccaaggga ggtgtctatg cagacgttga
+      841 tactatgcct cttcagcctg taccaaactg gattcctgaa aatgtctccc caaaaagcat
+      901 cgggatgatc attggaatac aaaacgatgc taacaatcca gattggaaaa agattacgta
+      961 catcgtctac aattttccaa ttggtgtatt caagcgaagc ctggtcaccc aatcttgata
+     1021 ccgttcgtat agcatacatt atacgaagtt atatccttca gtaatgtctt gtttcttttg
+     1081 ttgcagtggt gagccatttt gacttcgtga aagtttcttt agaatagttg tttccagagg
+     1141 ccaaacattc cacccgtagt aaagtgcaag cgtaggagaa ccaagactgg cataaatcag
+     1201 gtataagtgt cgagcactgg caggtgatct tctgaaagtt tctactagca gataagatcc
+     1261 agtagtcatg catatggcaa caatgtaccg tgtggatcta agaacgcgtc ctactaacct
+     1321 tcgcattcgt tggtccagtt tgttgttatc gatcaacgtg acaaggttgt cgattccgcg
+     1381 taagcatgca tacccaagga cgcctgttgc aattccaagt gagccagttc caacaatctt
+     1441 tgtaatatta gagcacttca ttgtgttgcg cttgaaagta aaatgcgaac aaattaagag
+     1501 ataatctcga aaccgcgact tcaaacgcca atatgatgtg cggcacacaa taagcgttca
+     1561 tatccgctgg gtgactttct cgctttaaaa aattatccga aaaaattttc tagagtgttg
+     1621 ttactttata cttccggctc gtataatacg acaaggtgta aggaggacta aaccatgggt
+     1681 actaccttag atgatacagc ctacagatac agaacatcag tccctggtga tgctgaagca
+     1741 attgaggctt tagacggttc attcaccacc gacaccgtct ttagagtaac cgccaccggt
+     1801 gatggattta ccttaagaga agtcccagtc gaccctccat taactaaagt ctttccagat
+     1861 gatgaatctg atgacgaaag cgacgacgga gaagatggtg acccagattc aagaactttc
+     1921 gtagcatacg gtgatgacgg tgatttggct ggttttgtag tcgtttctta ttcaggttgg
+     1981 aatagaaggt tgaccgttg
+//
