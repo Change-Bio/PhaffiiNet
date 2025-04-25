@@ -1,0 +1,77 @@
+LOCUS       9.final        1729 bp DNA     linear   SYN 02-AUG-2024
+DEFINITION  9 1729bp.
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      synthetic DNA construct
+  ORGANISM  synthetic DNA construct
+REFERENCE   1  (bases 1 to 1729)
+  AUTHORS   .
+  TITLE     Direct Submission
+  JOURNAL   Exported Apr 17, 2025 from SnapGene Viewer 7.2.0
+            https://www.snapgene.com
+FEATURES             Location/Qualifiers
+     source          1..1729
+                     /mol_type="other DNA"
+                     /organism="synthetic DNA construct"
+     CDS             join(95..153,256..1057)
+                     /codon_start=1
+                     /gene="HOC1"
+                     /locus_tag="PP7435_CHR3-0582"
+                     /product="Alpha-1,6-mannosyltransferase"
+                     /label=HOC1
+                     /note="Alpha-1,6-mannosyltransferase involved in cell wall 
+                     mannan biosynthesis; subunit of a Golgi-localized complex 
+                     in S. cerevisiae that also contains Anp1p, Mnn9p, Mnn11p, 
+                     and Mnn10p; identified as a suppressor of a cell lysis 
+                     sensitive pkc1-371 allele"
+                     /db_xref="EnsemblGenomes-Gn:PP7435_Chr3-0582"
+                     /db_xref="EnsemblGenomes-Tr:CCA39540"
+                     /db_xref="GOA:F2QVW2"
+                     /db_xref="InterPro:IPR007577"
+                     /db_xref="InterPro:IPR029044"
+                     /db_xref="UniProtKB/TrEMBL:F2QVW2"
+                     /protein_id="CCA39540.1"
+                     /translation="MYERCEVSLLAIFLQRDRGRKVIWLTVGLITVILVIIKISSSKST
+                     ATDLQKVLKNANILPQDVINYNSRKVTDELASKLDEIQKKYLSKQDDRISKLEAERADL
+                     LEQVRFLRNPPAGSSLREKLAYLFPYNENGKFPAYIWQTWKYGLNDDRFGEKFKEGETQ
+                     WASKNPGFVHELFNDDTSGVFIHHLYINVPEVIKAYELLPNIILKMDFFRYLVLYAKGG
+                     VYADVDTMPLQPVPNWIPENVSPKSIGMIIGIQNDANNPDWKKITYIVYNFPIGVFKRS
+                     LVTQS"
+     protein_bind    complement(1058..1091)
+                     /label=lox71/66
+                     /bound_moiety="Cre recombinase"
+                     /note="loxP double mutant with a low affinity for Cre 
+                     recombinase (Araki et al., 2010). 8-bp core sequence 
+                     (ATGTATGC) (Shaw et al., 2021)."
+ORIGIN
+        1 atcaaacttg ccttgaaggt aattggctag gtgcttgttg agtgtcgcac gtctcggtat
+       61 ttttttactt gtcgattctc tcttactgtc caagatgtac gaaagatgtg aagtttcttt
+      121 gttggcgatt ttcttgcagc gcgatcgcgg tcggtatgat ttcccttcag accaaaaaca
+      181 gatatagata ttcaattgaa actcgccctt ccaacaccct gaacaccacc ccctaatgca
+      241 acaacagctg tttagaaaag taatttggct cacggttgga ctcataacgg tgatattggt
+      301 aataataaag atttcatcca gcaagtccac cgccacagac cttcagaaag tattgaagaa
+      361 tgccaatatt ttaccgcagg acgtgatcaa ttacaatagc agaaaagtaa cggatgaact
+      421 cgcttcaaag ctggacgaga ttcaaaagaa gtatctctcg aagcaagatg atagaattag
+      481 caagctcgaa gctgaacggg cagatctact ggaacaggtt agatttctaa ggaacccccc
+      541 tgcaggatca agtttaagag aaaaattggc ttatctgttt ccttataatg aaaacggcaa
+      601 attccctgct tatatatggc aaacatggaa gtatggcttg aatgacgatc ggtttggaga
+      661 aaagttcaaa gaaggcgaaa ctcagtgggc ttcgaagaat cctggtttcg ttcatgagtt
+      721 gtttaacgat gatacttccg gtgtgtttat tcaccatctg tatatcaatg ttccagaagt
+      781 gatcaaagca tacgagctgc ttcccaacat aatcttgaaa atggacttct tcagatattt
+      841 ggttttatac gccaagggag gtgtctatgc agacgttgat actatgcctc ttcagcctgt
+      901 accaaactgg attcctgaaa atgtctcccc aaaaagcatc gggatgatca ttggaataca
+      961 aaacgatgct aacaatccag attggaaaaa gattacgtac atcgtctaca attttccaat
+     1021 tggtgtattc aagcgaagcc tggtcaccca atcttgatac cgttcgtata gcatacatta
+     1081 tacgaacggt agagaattaa tcgccaaaat cacagaggat acactgcaac gagccgagtc
+     1141 aaactcactg gaactagctg acattagcga agaaggcggc ctgtctgata agaatttgtc
+     1201 cattatgcaa tggacgggta ctggtatttt tacagatgcc atatttacct attttaatga
+     1261 ctacattcaa agtagtatct ataccaaagt tacttggaaa gaattctcca aattgagaaa
+     1321 gcccaagctt gtcagtgatg tattggtact gccgattatc agcttctcgg ccggtgcagg
+     1381 tagtggaaaa tcgactgaac tgaacgatcc cttagcattc gtacaacatt attttgaaag
+     1441 attacataac gacaaccact aagggtcaga accatttaga ttgtctggat ctatcattat
+     1501 ggccttgttt atagacaaag aattgtatcc tggactgaag ggaagtttat agagtaatac
+     1561 ccctctgaca accaactcga atgggtattt tgagataatt tcccatatat tattgtcttc
+     1621 actgggagac ttacttcttc tttgtagttc cggtatcggc agcaaactta tggtggtcac
+     1681 atcttccaaa cttctcggta tagtagaact atttgtggtt gatacggtc
+//
