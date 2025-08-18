@@ -2,7 +2,7 @@
 
 *Keep this repository confidential for now please, as it contains information that has not yet been reviewed by Change Bio's lawyers and therefore could be harmful to CB's commercial interests*
 
-This repository collects the current information around the hoc1tr strain of K. phaffii being distributed by Change Bio and others.
+This repository collects the current information around the strains of K. phaffii being distributed by Change Bio and others.
 The goal is for it to act as a guide to what the strain is, who has it, what data has been collected using it so far, and what would be useful to have next.
 
 ## What are the strains?
