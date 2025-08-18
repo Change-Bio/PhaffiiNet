@@ -5,21 +5,18 @@
 This repository collects the current information around the hoc1tr strain of K. phaffii being distributed by Change Bio and others.
 The goal is for it to act as a guide to what the strain is, who has it, what data has been collected using it so far, and what would be useful to have next.
 
-## What is the strain?
-We (Change Bio) received the YB-4290 strain of Komagataella phaffii from the ARS collection (NRRL).
+## What are the strains?
+We (Change Bio) received the YB-4290 strain of Komagataella phaffii from the ARS collection (NRRL) - we're calling this one PhaffiiNet-1 (PN-1) but it can also be called the type strain.
 We followed the steps given by Claes et al., 2024 for making their NCYC 2543 hoc1tr-1 strain.
 The genetic elements used are in the `sequences' folder and the workflow is represented in the OpenCloning file: [YB-4290_hoc1tr.zip](YB-4290_hoc1tr.zip).
 To view this file visit [https://opencloning.org/](https://opencloning.org/), select File->Load cloning history from File, and upload the .zip archive.
+We've then called this strain PhaffiiNet-2 (PN-2)
 
 Briefly, we used a double-crossover with a split Noursethricin antibiotic marker to replace the native hoc1 gene in the strain with the version with a premature stop codon that is found in Y-11430.
 The selection region of the integrated sequence was floxed, and so we transiently expressed cre recombinase using an episomal genetic element with Zeocin selection to "flip out" the selection, leaving only a lox scar.
 After passaging on non-selective media, we confirmed susceptibility to both Noursethiricin and Zeocin as an indication that the cre-recombination had happened and the episomal plasmid had been lost.
 We then carried out sequencing of an amplicon amplified from the genome region using colony PCR around the hoc1 gene to confirm that the truncation had occured.
 We have not yet carried out whole-genome sequencing of the strain (see "Outstanding To-dos").
-
-## What is it called?
-To be decided. Not sure we want to call it "Open" anything, we'd prefer people just use it because it's the strain everyone uses.
-It's YB-4290 hoc1tr technically, but that isn't that catchy...
 
 ## Why are you doing this?
 We are a protein manufacturer that uses our proprietary strains of K. phaffii and process to make our customers' proteins.
