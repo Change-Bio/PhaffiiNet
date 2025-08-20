@@ -11,6 +11,9 @@ This repository documents the K. phaffii hoc1tr strain (PhaffiiNet-2) distribute
 ## Repository Structure
 
 - `README.md` - Main documentation explaining the strain, its construction, and distribution
+- `index.md` - Jekyll homepage with "coming soon" landing page
+- `_config.yml` - Jekyll configuration for GitHub Pages (minimal theme)
+- `CLAUDE.md` - This file - guidance for Claude Code instances
 - `phaffinet.csv` - Database of strains with IDs, genotypes, and contact information
 - `sequence_resources/` - Genetic sequence files and construction materials
   - `Phaffiinet_1/YB-4290_annotated.gbk` - Annotated genome sequence of parent strain
@@ -20,6 +23,7 @@ This repository documents the K. phaffii hoc1tr strain (PhaffiiNet-2) distribute
     - PCR primers for verification
     - Sequencing results
 - `NRRL_Order_Form_anonymised.pdf` - Documentation of original strain acquisition
+- `.github/workflows/jekyll-gh-pages.yml` - GitHub Pages deployment workflow
 
 ## Key Information
 
@@ -42,6 +46,12 @@ This repository contains biological data and documentation rather than software 
 - Updating strain database (phaffinet.csv)
 - Managing sequence files in GenBank format (.gbk, .gb)
 - Maintaining documentation and distribution records
+
+### Jekyll/GitHub Pages
+- Repository is configured for GitHub Pages with Jekyll
+- Uses `jekyll-theme-minimal` for clean, academic presentation
+- Automatic deployment via `.github/workflows/jekyll-gh-pages.yml`
+- Site builds automatically on push to main branch
 
 ## Outstanding Tasks
 - Whole-genome sequencing validation
