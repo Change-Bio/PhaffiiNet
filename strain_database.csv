@@ -1,16 +1,16 @@
-Strain,Genotype,Where is it?,What terms can I get it under?
-PN-1 (YB-4290),-,NRRL,"No MTA, do not distribute onwards"
-NRRL Y-11430,-,ATCC,Very commercial
-OPENPichia,hoc1tr,VIB,OpenPichia terms
-OPENPichia,hoc1tr,Jenny Molloy,Can’t redistribute
-PN-2,hoc1tr,Change Bio,OpenMTA
-KM71(H),aox1-,Invitrogen,Very commercial
-OPENPichia Muts,aox1-,Jenny Molloy (Ordered),Can’t redistribute
-OPENPichia Muts,aox1-,VIB,OpenPichia terms
-PN-3,aox1-,Change Bio (pending),OpenMTA
-SMD1168(H),pep4-yps1-,Invitrogen,Very commercial
-OPENPichia pep4 yps1,pep4-yps1-,VIB,OpenPichia terms
-OPENPichia pep4 yps1,pep4-yps1-,Jenny Molloy (Ordered),Can’t redistribute
-GS115,his4-,Invitrogen,Very commercial
-OPENPichia his4,his4-,VIB,OpenPichia terms
-OPENPichia his4,his4-,Jenny Molloy (Ordered),Can’t redistribute
+Strain Name,Strain ID,Other Ids,Genotype,Where is it?,What terms can I get it under?,Notes
+PhaffiiNet-1,PN-1,Type strain,-,NRRLARS/NRRL culture collection,"No MTA, do not distribute onwards",
+NRRL Y-11430,,Type strain,-,ATCC,Very commercial,
+OPENPichia,,“Industrial strain”,hoc1tr,VIB,OpenPichia terms,
+OPENPichia,,“Industrial strain”,hoc1tr,Jenny Molloy,Can’t redistribute,
+PhaffiiNet-2,PN-2,“Industrial strain”,hoc1tr,Change Bio,OpenMTA,
+KM71(H),,,aox1-,Invitrogen,Very commercial,
+OPENPichia Muts,,MutS,aox1-,Jenny Molloy (Ordered),Can’t redistribute,
+OPENPichia Muts,,MutS,aox1-,VIB,OpenPichia terms,
+PhaffiiNet-3,PN-3,MutS,aox1-,Change Bio (pending),OpenMTA,
+SMD1168(H),,,pep4-yps1-,Invitrogen,Very commercial,
+OPENPichia pep4 yps1,,,pep4-yps1-,VIB,OpenPichia terms,
+OPENPichia pep4 yps1,,,pep4-yps1-,Jenny Molloy (Ordered),Can’t redistribute,
+GS115,,,his4-,Invitrogen,Very commercial,
+OPENPichia his4,,,his4-,VIB,OpenPichia terms,
+OPENPichia his4,,,his4-,Jenny Molloy (Ordered),Can’t redistribute,
