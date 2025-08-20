@@ -8,3 +8,5 @@ title: Home
 ## Coming Soon
 
 This site is under construction and will contain documentation and resources for K. phaffii strains.
+
+[View Strain Database](/strains)
