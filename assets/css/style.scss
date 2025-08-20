@@ -1,0 +1,94 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Strain database table styles
+.search-container {
+  margin-bottom: 20px;
+  
+  input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    
+    &:focus {
+      outline: none;
+      border-color: #0366d6;
+    }
+  }
+}
+
+.table-container {
+  overflow-x: auto;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#strainsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  
+  th {
+    background-color: #f6f8fa;
+    border-bottom: 2px solid #ddd;
+    padding: 12px 8px;
+    text-align: left;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    
+    &:hover {
+      background-color: #e1e4e8;
+    }
+    
+    .sort-arrow {
+      margin-left: 5px;
+      color: #999;
+      font-size: 12px;
+    }
+  }
+  
+  td {
+    border-bottom: 1px solid #eee;
+    padding: 10px 8px;
+    vertical-align: top;
+  }
+  
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .table-container {
+    font-size: 12px;
+  }
+  
+  #strainsTable {
+    th, td {
+      padding: 8px 4px;
+    }
+  }
+}
+
+// Mobile-friendly table scrolling
+@media (max-width: 600px) {
+  .table-container {
+    margin: 10px -10px;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+}
