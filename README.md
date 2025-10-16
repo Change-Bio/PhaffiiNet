@@ -1,9 +1,10 @@
-# K. phaffii
+# PhaffiiNet
 
-*Keep this repository confidential for now please*
+A virtual and physical network of *Komagataella phaffii* strains (AKA *Pichia pastoris*) with gold-standard documentation. 
 
-This repository collects the current information around the strains of K. phaffii being distributed by Change Bio and others.
-The goal is for it to act as a guide to what the strain is, who has it, what data has been collected using it so far, and what would be useful to have next.
+Visit [phaffii.net](phaffii.net) for documentation on PhaffiiNet and the goals there, this README.md file describes how to work with the backend here at GitHub.
+
+The 
 
 ## What are the strains?
 We (Change Bio) received the YB-4290 strain of Komagataella phaffii from the ARS collection (NRRL) - we're calling this one PhaffiiNet-1 (PN-1) but it can also be called the type strain.
