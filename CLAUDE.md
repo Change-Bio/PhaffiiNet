@@ -4,26 +4,36 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Purpose
 
-This repository documents the K. phaffii hoc1tr strain (PhaffiiNet-2) distributed by Change Bio. It's a scientific/biotechnology resource repository containing strain information, genetic sequences, and distribution data for the microbiology research community.
+This repository contains:
+1. A Next.js static website for phaffii.net showcasing K. phaffii strains
+2. Scientific documentation for PhaffiiNet strains distributed by Change Bio
+3. Genetic sequences and strain distribution data for the microbiology research community
 
 **Important**: This repository contains confidential commercial information that has not yet been reviewed by Change Bio's lawyers. Handle with appropriate discretion.
 
 ## Repository Structure
 
-- `README.md` - Main documentation explaining the strain, its construction, and distribution
-- `index.md` - Jekyll homepage with "coming soon" landing page
-- `_config.yml` - Jekyll configuration for GitHub Pages (minimal theme)
-- `CLAUDE.md` - This file - guidance for Claude Code instances
-- `phaffinet.csv` - Database of strains with IDs, genotypes, and contact information
-- `sequence_resources/` - Genetic sequence files and construction materials
+### Website Code (Next.js)
+- `src/app/` - Next.js 14 App Router pages
+  - `page.tsx` - Homepage with hero section and strain cards
+  - `layout.tsx` - Root layout with metadata
+  - `globals.css` - Global Tailwind CSS styles
+- `content/` - Markdown content files with frontmatter
+  - `home.md` - Homepage hero text and strain section content
+  - `strains/*.md` - Individual strain markdown files
+  - `settings.md` - Site-wide settings (colors, company name)
+- `package.json` - npm scripts and dependencies
+- `next.config.mjs` - Next.js configured for static export
+- `tailwind.config.ts` - Tailwind CSS configuration
+- `tsconfig.json` - TypeScript configuration with `@/*` path alias
+
+### Scientific Data
+- `README.md` - Main scientific documentation explaining strain construction and distribution
+- `data/strain_database.csv` - Database of strains with IDs, genotypes, and contact information
+- `data/sequence_resources/` - Genetic sequence files and construction materials
   - `Phaffiinet_1/YB-4290_annotated.gbk` - Annotated genome sequence of parent strain
-  - `Phaffiinet_2/` - Construction materials for the hoc1tr strain including:
-    - Cloning strategy documentation
-    - Split marker fragments
-    - PCR primers for verification
-    - Sequencing results
-- `NRRL_Order_Form_anonymised.pdf` - Documentation of original strain acquisition
-- `.github/workflows/jekyll-gh-pages.yml` - GitHub Pages deployment workflow
+  - `Phaffiinet_2/` - Construction materials for the hoc1tr strain including cloning strategy, split marker fragments, PCR primers, and sequencing results
+- `data/NRRL_Order_Form_anonymised.pdf` - Documentation of original strain acquisition
 
 ## Key Information
 
@@ -42,16 +52,38 @@ This repository documents the K. phaffii hoc1tr strain (PhaffiiNet-2) distribute
 
 ## Development Commands
 
-This repository contains biological data and documentation rather than software code. There are no build, test, or lint commands. Work primarily involves:
-- Updating strain database (phaffinet.csv)
-- Managing sequence files in GenBank format (.gbk, .gb)
-- Maintaining documentation and distribution records
+### Next.js Website
+```bash
+npm run dev          # Start development server on http://localhost:3000
+npm run build        # Build static site for production (output to out/)
+npm run start        # Start production server (requires build first)
+npm run lint         # Run Next.js linter
+npm run deploy:dev   # Build and deploy to Firebase dev environment
+npm run deploy:prod  # Build and deploy to Firebase production environment
+npm run deploy       # Alias for deploy:dev
+```
 
-### Jekyll/GitHub Pages
-- Repository is configured for GitHub Pages with Jekyll
-- Uses `jekyll-theme-minimal` for clean, academic presentation
-- Automatic deployment via `.github/workflows/jekyll-gh-pages.yml`
-- Site builds automatically on push to main branch
+### Scientific Data Management
+Work primarily involves:
+- Updating strain database (`data/strain_database.csv`)
+- Managing sequence files in GenBank format (`.gbk`, `.gb`)
+- Maintaining documentation in `README.md`
+- Adding/updating strain content files in `content/strains/*.md`
+
+## Architecture Notes
+
+### Content Management System
+The website uses a file-based CMS approach:
+- Content is stored in markdown files with YAML frontmatter in `content/`
+- `gray-matter` parses frontmatter at build time (server-side)
+- Page components use Node.js `fs` module to read content during static generation
+- Strains are rendered as cards, sorted by `order` field in frontmatter
+
+### Static Site Generation
+- Next.js configured with `output: 'export'` for static HTML export
+- Images use `unoptimized: true` for compatibility with static hosting
+- No API routes or server-side rendering - fully static site
+- `@/*` path alias maps to `./src/*` for cleaner imports
 
 ## Outstanding Tasks
 - Whole-genome sequencing validation

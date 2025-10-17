@@ -1,12 +1,11 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import Image from 'next/image';
-import Link from 'next/link';
 
 interface Strain {
-  name: string;
-  description: string;
+  strain_name: string;
+  strain_description: string;
+  order?: number;
 }
 
 export default function Home() {
@@ -25,13 +24,13 @@ export default function Home() {
     homeData = { ...homeData, ...data };
   }
 
-  // Read strains 
+  // Read strains
   const strainsDir = path.join(process.cwd(), 'content', 'strains');
-  let Strains: Strain[] = [];
+  let strains: Strain[] = [];
 
   if (fs.existsSync(strainsDir)) {
     const files = fs.readdirSync(strainsDir);
-     Strains = files
+    strains = files
       .filter((file) => file.endsWith('.md'))
       .map((file) => {
         const filePath = path.join(strainsDir, file);
@@ -97,22 +96,20 @@ export default function Home() {
           </h2>
         </div>
         <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              {Strains.map((strain) => (
-                <div
-                  key={strain.name}
-                  className="bg-gray-100 rounded-lg p-8 text-center hover:bg-gray-200 transition-colors"
-                >
-                  )}
-                  <h3 className="text-2xl font-bold text-black mb-3">
-                    {strain.name}
-                  </h3>
-                  <p className="text-gray-700 mb-6 text-lg">{strain.description}</p>
-                  )}
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {strains.map((strain) => (
+              <div
+                key={strain.strain_name}
+                className="bg-gray-100 rounded-lg p-8 text-center hover:bg-gray-200 transition-colors"
+              >
+                <h3 className="text-2xl font-bold text-black mb-3">
+                  {strain.strain_name}
+                </h3>
+                <p className="text-gray-700 mb-6 text-lg">{strain.strain_description}</p>
+              </div>
+            ))}
           </div>
+        </div>
       </section>
 
 
