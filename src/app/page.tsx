@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
+import HeroVideo from './HeroVideo';
 
 interface Strain {
   strain_name: string;
@@ -55,13 +56,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Header Navigation */}
-      <header className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 z-50">
+      <header className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 z-50">
         <div className="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold" style={{ color: settings.primary_color }}>
+          <div className="text-xl font-bold text-hookers_green-500">
 	  PhaffiiNet
           </div>
           <nav className="flex gap-8">
-            <a href="#strains" className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors">
+            <a href="#strains" className="text-hookers_green-500 dark:text-hookers_green-600 hover:text-hookers_green-600 dark:hover:text-hookers_green-700 transition-colors">
               The strains
             </a>
           </nav>
@@ -71,15 +72,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center px-8 overflow-hidden">
         {/* Video Background */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover z-0 blur-sm bg-white"
-        >
-          <source src="/hero-video.mp4" type="video/mp4" />
-        </video>
+        <HeroVideo />
 
         {/* Dark Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-10"></div>
@@ -88,7 +81,7 @@ export default function Home() {
         <div className="relative z-20 max-w-6xl mx-auto w-full">
           <div className="text-center">
             <h1
-              className="text-6xl md:text-8xl font-bold mb-6 text-white"
+              className="text-5xl md:text-7xl font-bold mb-6 text-white"
               style={{
                 textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.9), 2px 2px 4px rgba(0,0,0,0.8)'
               }}
@@ -96,7 +89,7 @@ export default function Home() {
               {homeData.hero_title}
             </h1>
             <div
-              className="text-3xl md:text-4xl text-white font-light"
+              className="text-2xl md:text-3xl text-white font-light"
               style={{
                 textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.9), 2px 2px 4px rgba(0,0,0,0.8)'
               }}
@@ -115,11 +108,10 @@ export default function Home() {
       </section>
 
       {/* Strains Section */}
-      <section id="strains" className="py-12 px-4 bg-gray-100 dark:bg-gray-800">
+      <section id="strains" className="py-12 px-4 bg-lion-900 dark:bg-gray-800">
         <div className="max-w-4xl mx-auto">
           <h2
-            className="text-4xl font-bold mb-8 text-center"
-            style={{ color: settings.primary_color }}
+            className="text-4xl font-bold mb-8 text-center text-hookers_green-500"
           >
             {homeData.strains_title}
           </h2>
@@ -129,9 +121,9 @@ export default function Home() {
             {strains.map((strain) => (
               <div
                 key={strain.strain_name}
-                className="bg-gray-100 dark:bg-gray-700 rounded-lg p-8 text-center hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                className="bg-white dark:bg-gray-700 rounded-lg p-8 text-center hover:bg-hookers_green-900 dark:hover:bg-gray-600 transition-colors"
               >
-                <h3 className="text-2xl font-bold text-black dark:text-white mb-3">
+                <h3 className="text-2xl font-bold text-hookers_green-500 dark:text-hookers_green-600 mb-3">
                   {strain.strain_name}
                 </h3>
                 <div className="text-gray-700 dark:text-gray-300 mb-6 text-lg">
@@ -152,8 +144,8 @@ export default function Home() {
 
 
       {/* Footer */}
-      <footer className="py-8 px-4 bg-white dark:bg-gray-900 border-t border-gray-300 dark:border-gray-700">
-        <div className="max-w-5xl mx-auto text-center text-gray-600 dark:text-gray-400 text-sm">
+      <footer className="py-8 px-4 bg-white dark:bg-gray-800 border-t border-hookers_green-800 dark:border-hookers_green-500">
+        <div className="max-w-5xl mx-auto text-center text-gray-700 dark:text-gray-300 text-sm">
           <p>
             {new Date().getFullYear()} {settings.company_name}.
             {' | '}
@@ -161,7 +153,7 @@ export default function Home() {
               href="https://github.com/Change-Bio/PhaffiiNet"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
+              className="text-gray-700 dark:text-gray-300 hover:text-hookers_green dark:hover:text-hookers_green-600 transition-colors"
             >
               View on GitHub
             </a>
