@@ -4,7 +4,140 @@ A virtual and physical network of *Komagataella phaffii* strains (AKA *Pichia pa
 
 Visit [phaffii.net](phaffii.net) for documentation on PhaffiiNet and the goals there, this README.md file describes how to work with the backend here at GitHub.
 
-The 
+---
+
+## Website Development Guide
+
+This repository includes a Next.js static website that showcases the PhaffiiNet strains. Here's how to work with it:
+
+### Quick Start
+
+```bash
+npm install              # Install dependencies
+npm run dev             # Start development server at http://localhost:3000
+npm run build           # Build static site (outputs to out/)
+npm run deploy          # Build and deploy to Firebase dev environment
+npm run deploy:prod     # Build and deploy to Firebase production
+```
+
+### Editing Content (CMS)
+
+The website uses a file-based CMS - all content is stored in markdown files in the `content/` folder:
+
+#### Homepage Content (`content/home.md`)
+```yaml
+---
+hero_title: PhaffiiNet
+hero_subtitle: A virtual and physical network of *Komagataella phaffii* strains...
+strains_title: The strains
+strains_content: Brief description...
+---
+```
+
+#### Strain Files (`content/strains/*.md`)
+```yaml
+---
+strain_name: PN-1
+strain_description: Description of the strain...
+order: 1
+---
+```
+
+The `order` field controls the display order of strain cards. Lower numbers appear first.
+
+#### Site Settings (`content/settings.md`)
+```yaml
+---
+primary_color: '#D4AF37'
+company_name: 'Change Bio'
+---
+```
+
+**Markdown Formatting**: Use `*text*` for italics, `**text**` for bold. The content is rendered with react-markdown.
+
+### Adding New Sections
+
+To add a new section to the homepage:
+
+1. **Add content fields** to `content/home.md`:
+   ```yaml
+   ---
+   hero_title: PhaffiiNet
+   # ... existing fields ...
+   new_section_title: My New Section
+   new_section_content: Content goes here...
+   ---
+   ```
+
+2. **Update the page component** in `src/app/page.tsx`:
+   ```tsx
+   // Add to the homeData interface/default:
+   let homeData = {
+     // ... existing fields ...
+     new_section_title: 'Placeholder',
+     new_section_content: 'Placeholder',
+   };
+
+   // Add new section in the JSX (around line 100+):
+   <section className="py-12 px-4 bg-white">
+     <div className="max-w-4xl mx-auto">
+       <h2 className="text-4xl font-bold mb-8 text-center">
+         {homeData.new_section_title}
+       </h2>
+       <div className="text-lg text-gray-700">
+         <ReactMarkdown>
+           {homeData.new_section_content}
+         </ReactMarkdown>
+       </div>
+     </div>
+   </section>
+   ```
+
+### Adding New Pages
+
+1. Create a new file in `src/app/[page-name]/page.tsx`
+2. Add content file in `content/[page-name].md`
+3. Read the content using the same pattern as `src/app/page.tsx`:
+   ```tsx
+   import fs from 'fs';
+   import path from 'path';
+   import matter from 'gray-matter';
+
+   const contentPath = path.join(process.cwd(), 'content', 'page-name.md');
+   const fileContents = fs.readFileSync(contentPath, 'utf8');
+   const { data } = matter(fileContents);
+   ```
+4. Add navigation link in the header (around line 62-66 in `src/app/page.tsx`)
+
+### File Structure
+
+```
+PhaffiiNet/
+├── src/app/              # Next.js pages
+│   ├── page.tsx         # Homepage
+│   ├── layout.tsx       # Root layout
+│   └── globals.css      # Global styles
+├── content/             # Content files (CMS)
+│   ├── home.md         # Homepage content
+│   ├── settings.md     # Site settings
+│   └── strains/        # Strain markdown files
+├── public/              # Static assets (images, videos)
+├── data/                # Scientific data (CSV, sequences)
+└── package.json         # Dependencies and scripts
+```
+
+### Styling
+
+The site uses Tailwind CSS. Common patterns:
+- Colors: Use `settings.primary_color` from `content/settings.md` for brand colors
+- Responsive: Use `md:` prefix for desktop styles (e.g., `text-xl md:text-3xl`)
+- Spacing: `px-4` (padding), `mb-8` (margin-bottom), `py-12` (padding vertical)
+
+### Deployment
+
+The site is configured for static export (`output: 'export'` in `next.config.mjs`). After building, all static files are in the `out/` directory and can be hosted anywhere.
+
+---
 
 ## What are the strains?
 We (Change Bio) received the YB-4290 strain of Komagataella phaffii from the ARS collection (NRRL) - we're calling this one PhaffiiNet-1 (PN-1) but it can also be called the type strain.

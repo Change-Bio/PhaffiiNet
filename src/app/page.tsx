@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import ReactMarkdown from 'react-markdown';
 
 interface Strain {
   strain_name: string;
@@ -68,21 +69,49 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-            {/* Hero Text */}
-            <div className="text-center">
-              <h1
-                className="text-4xl md:text-6xl font-bold mb-4"
-                style={{ color: settings.primary_color }}
+      <section className="relative min-h-screen flex items-center px-8 overflow-hidden">
+        {/* Video Background */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover z-0 blur-sm"
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+        </video>
+
+        {/* Dark Overlay */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-10"></div>
+
+        {/* Hero Text */}
+        <div className="relative z-20 max-w-6xl mx-auto w-full">
+          <div className="text-center">
+            <h1
+              className="text-6xl md:text-8xl font-bold mb-6 text-white"
+              style={{
+                textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.9), 2px 2px 4px rgba(0,0,0,0.8)'
+              }}
+            >
+              {homeData.hero_title}
+            </h1>
+            <div
+              className="text-3xl md:text-4xl text-white font-light"
+              style={{
+                textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.9), 2px 2px 4px rgba(0,0,0,0.8)'
+              }}
+            >
+              <ReactMarkdown
+                components={{
+                  p: ({ children }) => <span>{children}</span>,
+                  em: ({ children }) => <em>{children}</em>,
+                }}
               >
-                {homeData.hero_title}
-              </h1>
-              <p className="text-xl md:text-2xl text-gray-700 font-light">
                 {homeData.hero_subtitle}
-              </p>
+              </ReactMarkdown>
             </div>
           </div>
+        </div>
       </section>
 
       {/* Strains Section */}
@@ -105,7 +134,16 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-black mb-3">
                   {strain.strain_name}
                 </h3>
-                <p className="text-gray-700 mb-6 text-lg">{strain.strain_description}</p>
+                <div className="text-gray-700 mb-6 text-lg">
+                  <ReactMarkdown
+                    components={{
+                      p: ({ children }) => <span>{children}</span>,
+                      em: ({ children }) => <em>{children}</em>,
+                    }}
+                  >
+                    {strain.strain_description}
+                  </ReactMarkdown>
+                </div>
               </div>
             ))}
           </div>
